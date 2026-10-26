@@ -47,7 +47,7 @@ docs/       report, data dictionary, executive summary
 Spontaneous reports have no denominator, so findings are not incidence and not causation. Under-reporting and stimulated reporting vary. Adjustment covers age, sex and quarter only. About 40% of cases lack usable age. Events are MedDRA preferred terms, not grouped. Absence of a signal is not evidence of safety. Findings are leads for case review, not clinical conclusions.
 
 ## Tools
-MySQL 8 (all cleaning and analysis), Excel, HTML/JavaScript dashboard.
+MySQL (all cleaning and analysis), Excel, HTML dashboard.
 
 ## References
 Evans 2001; van Puijenbroek 2002; Bate 1998; Norén 2006; Mantel & Haenszel 1959; Robins, Breslow & Greenland 1986; Benjamini & Hochberg 1995; Gelman & Stern 2006; EMA GVP IX; CIOMS VIII. Full list in the report.
