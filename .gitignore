@@ -1,0 +1,4 @@
+data/raw/
+*.zip
+*.txt
+.DS_Store

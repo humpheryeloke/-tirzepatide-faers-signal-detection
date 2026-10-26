@@ -1,0 +1,8 @@
+"kpi_no","kpi","value","numerator","denominator","definition"
+"1","Clean unique cases (2025)","1465808","Cases after deletion, version and duplicate rules",,"Unique FAERS cases remaining after cleaning"
+"2","Tirzepatide cases (primary suspect)","58877","Unique cases with tirzepatide as primary suspect",,"Exposure group for the primary analysis (A1)"
+"3","Events tested","1406","Preferred terms meeting the minimum-count rule",,"Events carried into disproportionality testing"
+"4","Events with overall signal (%)","11.95","Events detected overall","Events tested","Share of tested events meeting the detection rule in the whole population"
+"5","Events with a hidden subgroup signal","160","Events not detected overall but detected in a subgroup",,"Events whose signal appears only inside a subgroup"
+"6","Robust hidden findings (H3)","101","Event x subgroup findings passing all five checks",,"Strongest evidence tier"
+"7","Priority P1 findings","7","H3, clinical event, patient-characteristic stratum",,"Highest-priority leads for medical review"
