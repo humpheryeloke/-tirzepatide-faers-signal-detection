@@ -4,6 +4,8 @@ A stratified disproportionality analysis that looks for adverse events that are 
 
 **[Open the interactive dashboard](dashboard/index.html)** (download the repo and open the file in a browser) · [Full report](docs/Tirzepatide_FAERS_Signal_Report.docx) · [Excel results](excel/Tirzepatide_FAERS_Subgroup_Signals.xlsx)
 
+> **Interpretation note:** this is an exploratory analysis of spontaneous reports. Observed patterns are statistical associations and do not show that tirzepatide caused any event. Findings are leads for case review, not medical advice or individual clinical guidance.
+
 ## Question
 Pooled signal screening can miss events concentrated in one group. Which tirzepatide events show that pattern, and how strong is the evidence for each?
 
@@ -28,6 +30,13 @@ FDA FAERS public quarterly ASCII files, 2025 Q1–Q4 (DEMO, DRUG, REAC, OUTC, IN
 
 Region and reporter-type findings are the majority but mainly reflect how cases are reported (tirzepatide reports are 95% consumer-reported), so they are ranked lower.
 
+## Dashboard pages
+The interactive dashboard (`dashboard/index.html`) has four pages:
+1. **Overview:** headline KPIs, what the pooled screen finds versus misses, hidden findings by subgroup and evidence tier, priority leads, and the case-flow funnel.
+2. **Hidden-signal explorer:** filter findings by priority, evidence tier, subgroup type, clinical area and minimum cases; ranked forest plot of subgroup ROR with 95% CI.
+3. **Event drill-through:** pick any event to see its ROR in every subgroup, its adjusted ROR, seriousness and which subgroups meet the detection rule.
+4. **Method & caveats:** data flow, statistical methods, evidence tiers, limitations and references.
+
 ## Run it yourself
 1. Install MySQL 8 and enable `local_infile` (`SET GLOBAL local_infile=1;`).
 2. Place the raw files as described above.
@@ -47,7 +56,12 @@ docs/       report, data dictionary, executive summary
 Spontaneous reports have no denominator, so findings are not incidence and not causation. Under-reporting and stimulated reporting vary. Adjustment covers age, sex and quarter only. About 40% of cases lack usable age. Events are MedDRA preferred terms, not grouped. Absence of a signal is not evidence of safety. Findings are leads for case review, not clinical conclusions.
 
 ## Tools
-MySQL (all cleaning and analysis), Excel, HTML dashboard.
+* **MySQL 8:** all cleaning, statistics and classification
+* **Excel:** results workbook with formula-driven summary
+* **HTML / JavaScript:** interactive dashboard
 
 ## References
 Evans 2001; van Puijenbroek 2002; Bate 1998; Norén 2006; Mantel & Haenszel 1959; Robins, Breslow & Greenland 1986; Benjamini & Hochberg 1995; Gelman & Stern 2006; EMA GVP IX; CIOMS VIII. Full list in the report.
+
+## Author
+Humphery Chinedu Eloke · Pharmacology · pharmacovigilance data analysis
