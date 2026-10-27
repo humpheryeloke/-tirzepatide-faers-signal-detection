@@ -2,7 +2,7 @@
 
 A stratified disproportionality analysis that looks for adverse events that are **not** over-reported in the whole population but **are** over-reported inside a subgroup (sex, age, region, reporter type, indication). Built in MySQL from the raw FAERS quarterly files.
 
-**[Open the interactive dashboard](dashboard/index.html)** (download the repo and open the file in a browser) · [Full report](docs/Tirzepatide_FAERS_Signal_Report.docx) · [Excel results](excel/Tirzepatide_FAERS_Subgroup_Signals.xlsx)
+**[Open the interactive dashboard](https://humpheryeloke.github.io/-tirzepatide-faers-signal-detection/dashboard/)** · [Full report](docs/Tirzepatide_FAERS_Signal_Report.docx) · [Excel results](excel/Tirzepatide_FAERS_Subgroup_Signals.xlsx)
 
 > **Interpretation note:** this is an exploratory analysis of spontaneous reports. Observed patterns are statistical associations and do not show that tirzepatide caused any event. Findings are leads for case review, not medical advice or individual clinical guidance.
 
@@ -31,7 +31,7 @@ FDA FAERS public quarterly ASCII files, 2025 Q1–Q4 (DEMO, DRUG, REAC, OUTC, IN
 Region and reporter-type findings are the majority but mainly reflect how cases are reported (tirzepatide reports are 95% consumer-reported), so they are ranked lower.
 
 ## Dashboard pages
-The interactive dashboard (`dashboard/index.html`) has four pages:
+**[Open the live dashboard](https://humpheryeloke.github.io/-tirzepatide-faers-signal-detection/dashboard/)** (opens in your browser, no download needed). It has four pages:
 1. **Overview:** headline KPIs, what the pooled screen finds versus misses, hidden findings by subgroup and evidence tier, priority leads, and the case-flow funnel.
 2. **Hidden-signal explorer:** filter findings by priority, evidence tier, subgroup type, clinical area and minimum cases; ranked forest plot of subgroup ROR with 95% CI.
 3. **Event drill-through:** pick any event to see its ROR in every subgroup, its adjusted ROR, seriousness and which subgroups meet the detection rule.
